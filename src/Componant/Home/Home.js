@@ -11,28 +11,28 @@ const Home = () => {
             <Carousel slide={false}>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100" style={{ height: 1400 }}
+                        className="d-block w-100 mb-5" style={{ height: 1400 }}
                         src={banner1}
                         alt="First slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100" style={{ height: 1400 }}
+                        className="d-block w-100 mb-5" style={{ height: 1400 }}
                         src={banner3}
                         alt="Second slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100" style={{ height: 1400 }}
+                        className="d-block w-100 mb-5" style={{ height: 1400 }}
                         src={banner2}
                         alt="Third slide"
                     />
                 </Carousel.Item>
             </Carousel>
 
-            <h1>Services</h1>
+            <h1 className='mt-5'> Topics</h1>
         </div>
     );
 };
