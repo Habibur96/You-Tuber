@@ -2,12 +2,12 @@ import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import edu from '../../images/edu.png';
+
 
 const Login = () => {
     return (
         <div className='container d-block w-25 mt-5 pt-5'>
-            {/* <img src={edu} height={90} alt="" /> */}
+
             <h2 class="d-flex text-danger">Please Login</h2>
 
 

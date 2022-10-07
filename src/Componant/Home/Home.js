@@ -3,6 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import banner1 from '../../images/banner-1.jpg'
 import banner2 from '../../images/banner-2.jpg'
 import banner3 from '../../images/banner-3.jpg'
+import Topics from '../Topics/Topics';
 
 
 const Home = () => {
@@ -32,7 +33,9 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <h1 className='mt-5'> Topics</h1>
+            <Topics></Topics>
+
+
         </div>
     );
 };

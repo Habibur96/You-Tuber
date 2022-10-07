@@ -10,14 +10,14 @@ const Header = () => {
 
         <div>
 
-            <Navbar collapseOnSelect expand="lg" className='fs-3 fw-bold' bg="secondary" variant="dark" sticky='top'>
+            <Navbar collapseOnSelect expand="lg" className='fs-3 fw-bold fixed' bg="secondary" variant="dark" sticky='top'>
                 <Container>
                     <Navbar.Brand as={Link} to="/home"> <img height={85} src={logo} alt="" /> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/home" href="#services">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/topic" href="#home">Topic</Nav.Link>
+                            <Nav.Link as={Link} to="/topics" href="#home">Topic</Nav.Link>
 
                         </Nav>
                         <Nav>
@@ -41,7 +41,7 @@ const Header = () => {
 
 
 
-        </div>
+        </div >
     );
 };
 
