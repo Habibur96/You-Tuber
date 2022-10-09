@@ -33,7 +33,7 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <Topics></Topics>
+            {/* <Topics></Topics> */}
 
 
         </div>
