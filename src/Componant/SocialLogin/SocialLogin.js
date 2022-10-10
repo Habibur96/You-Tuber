@@ -9,11 +9,11 @@ import auth from '../../firebase.init';
 
 const SocialLogin = () => {
     const navigate = useNavigate();
-    const [signInWithGoogle, user] = useSignInWithGoogle(auth); //SignIn with google
+    const [signInWithGoogle, googleUser] = useSignInWithGoogle(auth); //SignIn with google
     const [signInWithGithub, githubUser] = useSignInWithGithub(auth);
 
 
-    if (user || githubUser) {
+    if (googleUser || githubUser) {
         navigate('/home')
     }
     return (
