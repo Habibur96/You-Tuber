@@ -20,13 +20,14 @@ function App() {
 
       <Header></Header>
       <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/topics' element={<Topics></Topics>}></Route>
-        <Route path='/JavaScript' element={
+        <Route path='/javaScript' element={
           <RequireAuth>
             <JavaScript></JavaScript>
           </RequireAuth>

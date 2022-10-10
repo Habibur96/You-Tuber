@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, ListGroup } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import './Topics.css'
 import js from '../../images/js.png';
 import react from '../../images/React.png';

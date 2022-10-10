@@ -2,8 +2,20 @@ import React from 'react';
 import google from '../../images/google.png';
 import github from '../../images/gitHub.png';
 import facebook from '../../images/facebook.png';
+import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
+
 
 const SocialLogin = () => {
+    const navigate = useNavigate();
+    const [signInWithGoogle, user] = useSignInWithGoogle(auth); //SignIn with google
+    const [signInWithGithub, githubUser] = useSignInWithGithub(auth);
+
+
+    if (user || githubUser) {
+        navigate('/home')
+    }
     return (
         <div>
             <div className='d-flex align-items-center mt-5 mb-4'>
@@ -13,9 +25,9 @@ const SocialLogin = () => {
             </div>
 
             <div>
-                <button type="button" class="btn btn-dark btn-lg fs-5 fw-bolder" > <img height={40} src={google} alt="" />  SignIn Google</button> <br /><br />
+                <button onClick={() => signInWithGoogle()} type="button" class="btn btn-dark btn-lg fs-5 fw-bolder" > <img height={40} src={google} alt="" />  SignIn Google</button> <br /><br />
 
-                <button type="button" class="btn btn-danger btn-lg fs-5 fw-bolder "><img height={45} src={github} alt="" /> SignIn Github</button> <br /> <br />
+                <button onClick={() => signInWithGithub()} type="button" class="btn btn-danger btn-lg fs-5 fw-bolder "><img height={45} src={github} alt="" /> SignIn Github</button> <br /> <br />
 
                 <button type="button" class="btn btn-info btn-lg fs-5 fw-bolder "><img height={40} src={facebook} alt="" /> SignIn Facebook</button>
             </div>
