@@ -1,9 +1,6 @@
 import React, { useRef } from 'react';
 import { Button, Form, ToastContainer } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import google from '../../images/google.png';
-import github from '../../images/gitHub.png';
-import facebook from '../../images/facebook.png';
 import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { sendEmailVerification } from 'firebase/auth';

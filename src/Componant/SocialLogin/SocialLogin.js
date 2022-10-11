@@ -2,8 +2,8 @@ import React from 'react';
 import google from '../../images/google.png';
 import github from '../../images/gitHub.png';
 import facebook from '../../images/facebook.png';
-import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useAuthState, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 
@@ -15,6 +15,14 @@ const SocialLogin = () => {
 
     if (googleUser || githubUser) {
         navigate('/home')
+    }
+
+    const location = useLocation();
+    // const [user] = useAuthState();
+    let from = location.state?.from?.pathname || "/";//Redirect page or location
+
+    if (googleUser || githubUser) {
+        navigate(from, { replace: true });
     }
     return (
         <div>
