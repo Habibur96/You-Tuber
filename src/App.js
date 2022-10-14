@@ -10,8 +10,9 @@ import Login from './Componant/Login/Login';
 import SignUp from './Componant/SignUp/SignUp';
 import Topics from './Componant/Topics/Topics';
 import NotFound from './Componant/NotFound/NotFound';
-import JavaScript from './Componant/JS/JavaScript';
+// import JavaScript from './Componant/JS/JavaScript';
 import RequireAuth from './Componant/RequireAuth/RequireAuth';
+import TopicDetails from './Componant/TopicDetails/TopicDetails';
 
 
 function App() {
@@ -27,11 +28,18 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/topics' element={<Topics></Topics>}></Route>
-        <Route path='/javaScript' element={
+
+
+        <Route path='/topicDetails/:topicName' element={
+
           <RequireAuth>
-            <JavaScript></JavaScript>
-          </RequireAuth>
-        }></Route>
+            <TopicDetails></TopicDetails>
+          </RequireAuth>}>
+
+        </Route>
+
+
+
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
@@ -41,3 +49,12 @@ function App() {
 }
 
 export default App;
+
+
+{/* <Route path='/checkOut' element={
+  <RequireAuth>
+
+    <CheckOut></CheckOut>
+  </RequireAuth>
+
+}></Route> */}
