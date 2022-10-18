@@ -33,7 +33,7 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <h1 className='mt-5 fw-bold text-danger mb-5 pb-5'>Topics</h1>
+            <h1 className='mt-5 fw-bold text-danger mb-5 pb-5'>Tutorial Playlists</h1>
             <Topics></Topics>
 
 

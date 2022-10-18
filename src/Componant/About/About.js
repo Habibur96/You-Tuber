@@ -16,8 +16,10 @@ const About = () => {
 
                 <br /> <br />
                 <h3 className='text-danger'><b>To achieve my goal: </b></h3>
-                <p className='fw-bold fs-4 ' >To achieve this, specific goals need to be set, which include: Enhancing my networking skills. Besides I have to learn web related technologies. Such as, Html, Css, JavaScript, React, Redux, MongoDB, Nodejs, Firebase. To reach my goal obviously, I have to clear basices to advance concepts about this technologies and have to make more than one responsive website.</p>
+                <p className='fw-bold fs-4' >To achieve this, specific goals need to be set, which include: Enhancing my networking skills. Besides I have to learn web related technologies. Such as, Html, Css, JavaScript, React, Redux, MongoDB, Nodejs, Firebase. To reach my goal obviously, I have to clear basices to advance concepts about this technologies and have to make more than one responsive website.</p>
             </div>
+
+
 
         </div>
     );

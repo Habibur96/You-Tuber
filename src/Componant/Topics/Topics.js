@@ -11,14 +11,14 @@ const Topics = () => {
     }, [])
 
     return (
-        <>
+        <div className='row'>
             {
                 topics.map(topic => <TopicMenu
                     key={topic.id}
                     topic={topic}
                 ></TopicMenu>)
             }
-        </>
+        </div>
 
     );
 
