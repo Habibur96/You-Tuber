@@ -2,6 +2,31 @@
 ## Live Link
 ##
 
+* This is a website for a youtuber who create academic related tutorials and upload here. After visiting this site a student can learn many types of topics basic to advance.
+
+## features and functionality
+
+* Registration and Login system using email and password.
+* Multiple login system(Using google, github).
+* Blog and About part.
+* Mail varification syatem.
+* Reset password system.
+* Redirect page added for private route.
+* Topic part.
+* Topics Details part.
+* 404[NotFound page added]
+
+## List of technologies
+
+* React Bootstrap.
+* CSS.
+* React Router.
+* React Router hooks.
+* Firebase.
+* Libraries: React.
+* React Fontawesome for icon.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

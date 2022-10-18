@@ -1,5 +1,4 @@
 import React from 'react';
-import './TopicMenu.css'
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import startIcon from '../../images/icon.png'
