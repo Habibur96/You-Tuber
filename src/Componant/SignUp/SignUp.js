@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form, ToastContainer } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { sendEmailVerification } from 'firebase/auth';
 import { toast } from 'react-toastify';
@@ -15,10 +15,6 @@ const SignUp = () => {
 
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
-    //SignUp with Google
-    const [signInWithGoogle, googleUser] = useSignInWithGoogle(auth);
-    // SignUp with google
-    const [signInWithGithub, githubUser] = useSignInWithGithub(auth);
 
     const navigate = useNavigate();
 
@@ -42,12 +38,6 @@ const SignUp = () => {
             toast('Enter your email address');
         }
     }
-
-    if (googleUser || githubUser) {
-        navigate('/login');
-    }
-
-
 
     return (
         <div className='container mx-auto w-25 mt-5'>
@@ -81,9 +71,6 @@ const SignUp = () => {
                     <Button type="submit" class="btn-lg btn btn-danger"> Register</Button>
                 </div>
             </Form >
-
-
-            {/* Social Login */}
 
 
             <p className='align-items-start d-flex fw-bold'>Already have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none fw-bold' >Please Login</Link></p>

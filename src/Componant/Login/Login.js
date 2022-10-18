@@ -14,7 +14,7 @@ const Login = () => {
         signInWithEmailAndPassword,
         user,
         loading,
-        error,
+        error
     ] = useSignInWithEmailAndPassword(auth);
 
     const navigate = useNavigate();
@@ -41,8 +41,20 @@ const Login = () => {
     }
 
     if (user) {
-        // navigate('/home');
+
         navigate(from, { replace: true });
+    }
+
+    let errorElement;
+
+    //To show error if it's found
+    if (error) {
+
+        errorElement = <div>
+
+            <h3 className='text-danger'>Error: {error?.message}</h3>
+
+        </div>
     }
 
 
@@ -95,6 +107,9 @@ const Login = () => {
             <p className='d-flex fw-bold'>New to my website? <Link to='/signUp' className='text-danger fw-bold pe-auto text-decoration-none' onClick={navigateLogin}>Please Register</Link></p>
 
             <p className='d-flex fw-bold'>Forget Password? <button className='btn btn-link text-danger fw-bold pe-auto text-decoration-none' onClick={resetPaaword}> Reset Password</button></p>
+
+
+            {errorElement}
 
             <SocialLogin></SocialLogin>
             <ToastContainer />
