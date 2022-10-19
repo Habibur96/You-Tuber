@@ -1,9 +1,10 @@
-import { sendPasswordResetEmail } from 'firebase/auth';
+
 import React, { useRef } from 'react';
-import { Button, Form, ToastContainer } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -60,7 +61,7 @@ const Login = () => {
 
 
     //Forget Password || Reset Password
-    const resetPaaword = () => {
+    const resetPassword = () => {
         const email = emailRef.current.value;
 
         if (email) {
@@ -96,20 +97,25 @@ const Login = () => {
 
                 <div class="align-items-start d-flex">
 
-                    <Button type="submit" class="btn-lg btn btn-danger btn-lg">Login</Button>
+                    <>
+                        <div className="mb-3">
+                            <Button type="submit" variant="danger" size="lg">
+                                Login
+                            </Button>{' '}
+
+                        </div>
+
+                    </>
                 </div>
 
             </Form>  <br /> <br />
 
+            <p className='d-flex fw-bold'>New to my website? <Link to='/signUp' className='text-danger fw-bold pe-auto text-decoration-none' onClick={navigateLogin}>&nbsp;&nbsp; Please Register</Link></p>
 
-
-
-            <p className='d-flex fw-bold'>New to my website? <Link to='/signUp' className='text-danger fw-bold pe-auto text-decoration-none' onClick={navigateLogin}>Please Register</Link></p>
-
-            <p className='d-flex fw-bold'>Forget Password? <button className='btn btn-link text-danger fw-bold pe-auto text-decoration-none' onClick={resetPaaword}> Reset Password</button></p>
-
+            <p className='d-flex fw-bold'>Forget Password?<button className='btn btn-link text-danger fw-bold pe-auto text-decoration-none' onClick={resetPassword}>&nbsp;Reset Password</button></p>
 
             {errorElement}
+
 
             <SocialLogin></SocialLogin>
             <ToastContainer />

@@ -2,22 +2,21 @@
     {
         "id": 1,
         "name": "JavaScript",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnhIwnuhwbi1NknRdB8-yAuXd4YWEQ0vROjw&usqp=CAU",
-        "vidio": "https://www.youtube.com/watch?v=-JgNMdS-yaM&list=PLgH5QX0i9K3rz5XqMsTk41_j15_6682BN&index=2&ab_channel=AnisulIslam"
+        "description": "Javascript is used by programmers across the world to create dynamic and interactive web content like applications and browsers. JavaScript is the programming language of the Web.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnhIwnuhwbi1NknRdB8-yAuXd4YWEQ0vROjw&usqp=CAU"
     },
     {
         "id": 2,
         "name": "React",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "The React.js framework is an open-source JavaScript framework and library developed by Facebook. It's used for building interactive user interfaces and web applications quickly. ",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN2SgDhx9n5ioGrVl-H__7yl_1h6ZiXMGOIw&usqp=CAU"
     },
     {
         "id": 3,
         "name": "NodeJS",
         "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "NodeJs is used for server-side programming, and primarily deployed for non-blocking, event-driven servers, such as traditional web sites and back-end API services, but was originally designed with real-time in mind.",
         "vidio": "",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrlcFkF97wgryc8ELj-GPb4Mozlv5sbKwZbg&usqp=CAU"
     },
@@ -25,63 +24,63 @@
         "id": 4,
         "name": "Python",
         "price": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Python is often used as a support language for software developers, for build control and management, testing, and in many other ways",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIX_BwFDEU3pkjfnkjRXSCTeFt1CW4nNrWIA&usqp=CAU"
     },
     {
         "id": 5,
         "name": "PhP",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "PHP is an open-source server-side scripting language that many devs use for web development. It is also a general-purpose language that you can use to make lots of projects, including Graphical User Interfaces (GUIs).",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZahOugy7hjBSuCdBmQRTA0OujdtaxXKSipw&usqp=CAU"
     },
     {
         "id": 6,
         "name": "MongoDB",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "description": "MongoDB is a document database used to build highly available and scalable internet applications. MongoDB uses the MongoDB Query Language (MQL), designed for easy use by developers. MongoDB is a Document Database, which stores all schema.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY0DzYG-J1UM5WkH2pty17KXmJwXRHB0r7dg&usqp=CAU"
     },
     {
         "id": 7,
         "name": "MySQL",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "MySQL is a relational database management system (RDBMS) developed by Oracle that is based on structured query language (SQL). It may be anything from a simple shopping list to a picture gallery to hold the vast amounts of information in a corporate network.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCVmy7sGaFp1zFoDdi1wc6hLBpshl5LqFnww&usqp=CAU"
     },
     {
         "id": 8,
         "name": "C++",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "C++ (or “C-plus-plus”) is a general-purpose programming and coding language. C++ is used in developing browsers, operating systems, and applications, as well as in-game programming, software engineering, data structures, etc.",
         "img": "https://www.simplilearn.com/ice9/webinar_thum_image/CPP_Tutorial.jpg"
     },
     {
         "id": 9,
         "name": "Java",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Java is a programming language and computing platform. It has evolved from humble beginnings to power a large share of today's digital world, by providing the reliable platform upon which many services and applications are built.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTq22rqKksQQnUj0VmVF-eChf6iSjiOzFyrQ&usqp=CAU"
     },
     {
         "id": 10,
         "name": "Bootstrap",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvVoG6OvzBACcWU9T9yHjj8jdgl4j8t-C2BQ&usqp=CAU"
     },
     {
         "id": 11,
         "name": "Laravel",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching. Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZaad4fbIzjnMMZIJf-d--AqRTw2dUCGysrg&usqp=CAU"
     },
     {
         "id": 12,
         "name": "C#",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework. C# is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in .",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX2t_si-FfrprtMGsDPwXlSJ2ElpvdC7Aqjg&usqp=CAU"
     }
 ]

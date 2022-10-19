@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
-import { Button, Form, ToastContainer } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { sendEmailVerification } from 'firebase/auth';
-import { toast } from 'react-toastify';
+
 
 
 const SignUp = () => {
@@ -21,22 +21,18 @@ const SignUp = () => {
     const emailRef = useRef();
     const passwordRef = useRef();
 
-    const handleSignUp = async (event) => {
+    const handleSignUp = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
         createUserWithEmailAndPassword(email, password);
+        sendEmailVerification(email);
+        navigate('/login');
+    }
 
-        if (email) {
-            toast('Email sent');
-            await sendEmailVerification(email);
-            navigate('/login');
-        }
-        else {
-
-            toast('Enter your email address');
-        }
+    const navigateRegister = event => {
+        navigate('/login');
     }
 
     return (
@@ -67,15 +63,22 @@ const SignUp = () => {
                 </Form.Group>
 
                 <div class="align-items-start d-flex mb-5">
+                    <>
+                        <div className="mb-3">
+                            <Button type="submit" variant="danger" size="lg">
+                                Register
+                            </Button>{' '}
 
-                    <Button type="submit" class="btn-lg btn btn-danger"> Register</Button>
+                        </div>
+
+                    </>
                 </div>
+
             </Form >
 
+            <h5 className='align-items-start d-flex fw-bold'>Already have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none fw-bold' onClick={navigateRegister}>&nbsp;Please Login</Link></h5>
 
-            <p className='align-items-start d-flex fw-bold'>Already have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none fw-bold' >Please Login</Link></p>
 
-            <ToastContainer />
         </div >
     );
 };

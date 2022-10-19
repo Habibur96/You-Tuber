@@ -10,7 +10,6 @@ import Login from './Componant/Login/Login';
 import SignUp from './Componant/SignUp/SignUp';
 import Topics from './Componant/Topics/Topics';
 import NotFound from './Componant/NotFound/NotFound';
-// import JavaScript from './Componant/JS/JavaScript';
 import RequireAuth from './Componant/RequireAuth/RequireAuth';
 import TopicDetails from './Componant/TopicDetails/TopicDetails';
 

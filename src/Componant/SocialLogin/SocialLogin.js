@@ -2,7 +2,7 @@ import React from 'react';
 import google from '../../images/google.png';
 import github from '../../images/gitHub.png';
 import facebook from '../../images/facebook.png';
-import { useAuthState, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
@@ -10,18 +10,19 @@ import auth from '../../firebase.init';
 const SocialLogin = () => {
     const navigate = useNavigate();
     const [signInWithGoogle, googleUser] = useSignInWithGoogle(auth); //SignIn with google
-    const [signInWithGithub, githubUser] = useSignInWithGithub(auth);
+    const [signInWithGithub, githubUser] = useSignInWithGithub(auth); //SignIn with github
+    const [signInWithFacebook, facebookUser] = useSignInWithFacebook(auth); //SignIn with facebook
 
 
-    if (googleUser || githubUser) {
+    if (googleUser || githubUser || facebookUser) {
         navigate('/home')
     }
 
     const location = useLocation();
-    // const [user] = useAuthState();
+
     let from = location.state?.from?.pathname || "/";//Redirect page or location
 
-    if (googleUser || githubUser) {
+    if (googleUser || githubUser || facebookUser) {
         navigate(from, { replace: true });
     }
     return (
@@ -37,7 +38,7 @@ const SocialLogin = () => {
 
                 <button onClick={() => signInWithGithub()} type="button" class="btn btn-danger btn-lg fs-5 fw-bolder "><img height={45} src={github} alt="" /> SignIn Github</button> <br /> <br />
 
-                <button type="button" class="btn btn-info btn-lg fs-5 fw-bolder "><img height={40} src={facebook} alt="" /> SignIn Facebook</button>
+                <button onClick={() => signInWithFacebook()} type="button" class="btn btn-info btn-lg fs-5 fw-bolder "><img height={40} src={facebook} alt="" /> SignIn Facebook</button>
             </div>
         </div>
     );

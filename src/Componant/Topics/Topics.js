@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
+
 import TopicMenu from '../TopicMenu/TopicMenu';
 
 const Topics = () => {
     const [topics, settopics] = useState([]);
 
     useEffect(() => {
-        fetch('topics.json')
+        fetch('topics.json') //Data load from json file.
             .then(res => res.json())
             .then(data => settopics(data))
     }, [])
 
     return (
-        <div className='row'>
+        <div className='row' >
             {
                 topics.map(topic => <TopicMenu
                     key={topic.id}

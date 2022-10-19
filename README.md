@@ -4,10 +4,10 @@
 
 * This is a website for a youtuber who create academic related tutorials and upload here. After visiting this site a student can learn many types of topics basic to advance.
 
-## features and functionality
+## Features and functionality
 
 * Registration and Login system using email and password.
-* Multiple login system(Using google, github).
+* Multiple login system(Using google, github, facebook).
 * Blog and About part.
 * Mail varification syatem.
 * Reset password system.

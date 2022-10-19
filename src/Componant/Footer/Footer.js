@@ -75,8 +75,6 @@ const Footer = () => {
 
                 <a style={{ color: '#0C0C0C' }} target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/habiburrahman.nayan.58/" > <FontAwesomeIcon style={{ height: 45, paddingRight: 15 }} icon={faFacebook} /></a>
 
-
-
                 <a style={{ color: '#0C0C0C' }} href="https://github.com/Habibur96" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon style={{ height: 45, paddingRight: 15 }} icon={faGithub} /> </a>
 
                 <a style={{ color: '#0C0C0C' }} href="https://www.linkedin.com/in/habibur-nayan-ab769b215/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon style={{ height: 45, paddingRight: 15 }} icon={faLinkedin} />  </a>
@@ -88,7 +86,6 @@ const Footer = () => {
             </div>
 
             <h3 className='' style={{ color: '#0C0C0C', paddingBottom: '120px' }}>©Study With Nayan 2022. All rights reserved</h3>
-
 
         </div>
 
